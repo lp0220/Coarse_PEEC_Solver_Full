@@ -20,6 +20,3 @@ WORKSPACE_DIR = 'workspace'
 
 # Improved packaged solver executable (relative to this project directory)
 CPP_SOLVER_EXE = os.path.join('..', 'Solver_exe - Improve', 'Quasi_Static_Solver.exe')
-
-# MKL runtime DLL directory (from Anaconda)
-MKL_DLL_DIR = r'C:\ProgramData\anaconda3\Library\bin'

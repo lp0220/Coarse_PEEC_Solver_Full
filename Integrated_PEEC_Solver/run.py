@@ -215,11 +215,7 @@ def main():
     runtime_dir, runtime_exe = prepare_solver_runtime(workspace_abs, solver_exe)
 
     env = os.environ.copy()
-    extra_paths = []
-    if hasattr(config, 'MKL_DLL_DIR') and os.path.isdir(config.MKL_DLL_DIR):
-        extra_paths.append(config.MKL_DLL_DIR)
-    extra_paths.append(runtime_dir)
-    extra_paths.append(os.path.dirname(solver_exe))
+    extra_paths = [runtime_dir, os.path.dirname(solver_exe)]
     env["PATH"] = os.pathsep.join(extra_paths) + os.pathsep + env.get("PATH", "")
 
     cmd = [runtime_exe]

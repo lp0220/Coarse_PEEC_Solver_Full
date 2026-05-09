@@ -36,14 +36,8 @@ solver outputs back into the project workspace.
 - Python packages:
   - `numpy`
   - `matplotlib` for the optional plotting script
-- Intel MKL runtime DLLs for the packaged C++ solver. The default path is set
-  in `Integrated_PEEC_Solver/config.py`:
-
-```python
-MKL_DLL_DIR = r"C:\ProgramData\anaconda3\Library\bin"
-```
-
-Update this path if MKL is installed somewhere else.
+- No separate Intel MKL runtime configuration is required for the bundled
+  `Quasi_Static_Solver.exe` in this repository.
 
 ## Quick Start
 
