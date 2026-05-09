@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE and OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office lock files
+~$*.docx
+
+# Generated solver workspace files
+Integrated_PEEC_Solver/workspace/_solver_runtime/
+Integrated_PEEC_Solver/workspace/*.txt
+Integrated_PEEC_Solver/workspace/*.png
+!Integrated_PEEC_Solver/workspace/Plot.py
